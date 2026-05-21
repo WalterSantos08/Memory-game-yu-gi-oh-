@@ -31,7 +31,6 @@ body {
 
 #intro-screen {
   position: fixed;
-
   inset: 0;
 
   width: 100%;
@@ -59,9 +58,7 @@ body {
 
   font-family: monospace;
 
-  animation:
-    introFadeOut 1s ease forwards;
-
+  animation: introFadeOut 1s ease forwards;
   animation-delay: 4s;
 }
 
@@ -71,7 +68,6 @@ body {
   color: #fff;
 
   font-size: 42px;
-
   letter-spacing: 6px;
 
   text-shadow:
@@ -87,7 +83,6 @@ body {
   color: rgba(255,255,255,0.85);
 
   font-size: 20px;
-
   letter-spacing: 4px;
 
   animation: introOpacity 1.5s ease;
@@ -107,7 +102,6 @@ body {
 .login-card {
   width: 100%;
   max-width: 1080px;
-
   min-height: 760px;
 
   display: flex;
@@ -143,9 +137,7 @@ body {
 
 .left-side::before {
   content: "";
-
   position: absolute;
-
   inset: 0;
 
   background:
@@ -174,7 +166,6 @@ body {
   max-width: 620px;
 
   position: relative;
-
   z-index: 2;
 
   object-fit: contain;
@@ -228,7 +219,6 @@ body {
   font-weight: 800;
 
   letter-spacing: 4px;
-
   text-transform: uppercase;
 
   margin-bottom: 18px;
@@ -237,9 +227,9 @@ body {
 .panel h1 {
   margin: 0;
 
-  line-height: 0.95;
+  line-height: 0.9;
 
-  font-size: 82px;
+  font-size: clamp(34px, 4vw, 56px);
   font-weight: 900;
 
   text-transform: uppercase;
@@ -274,7 +264,6 @@ body {
   font-weight: 800;
 
   letter-spacing: 2px;
-
   text-transform: uppercase;
 }
 
@@ -367,7 +356,6 @@ footer {
 }
 
 @keyframes introZoom {
-
   from {
     transform: scale(0.7);
     opacity: 0;
@@ -377,11 +365,9 @@ footer {
     transform: scale(1);
     opacity: 1;
   }
-
 }
 
 @keyframes introOpacity {
-
   from {
     opacity: 0;
     transform: translateY(10px);
@@ -391,16 +377,13 @@ footer {
     opacity: 0.85;
     transform: translateY(0);
   }
-
 }
 
 @keyframes introFadeOut {
-
   to {
     opacity: 0;
     visibility: hidden;
   }
-
 }
 
 @media (max-width: 1100px) {
@@ -430,7 +413,6 @@ footer {
   .character {
     max-width: 480px;
   }
-
 }
 
 @media (max-width: 768px) {
@@ -451,6 +433,7 @@ footer {
 
   .login-page {
     width: 100%;
+    padding: 14px;
   }
 
   .login-card {
@@ -482,7 +465,7 @@ footer {
   }
 
   .panel h1 {
-    font-size: 46px;
+    font-size: 32px;
   }
 
   .description {
@@ -500,5 +483,4 @@ footer {
 
     font-size: 18px;
   }
-
 }
