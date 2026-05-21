@@ -1,37 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/login.css">
 
+  <script defer src="./js/intro.js"></script>
   <script defer src="./js/login.js"></script>
-  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
-  <title>Memory Game | Login</title>
 
-  
+  <link
+    rel="shortcut icon"
+    href="./images/logo.png"
+    type="image/x-icon"
+  >
+
+  <title>Yu-Gi-Oh! Memory Duel</title>
 </head>
 
 <body>
-  <body style="background-image: url('./images/background\ yugioh.jpg');">
-  <form class="login-form">
 
-    <div class="login__header">
-      <img src="./images/logo.png" alt="logo">
-      <img src="./images/yami yugi.png" alt="brain icon">
-      <h1>JOGO DA MEMÓRIA</h1>
-    </table>
-    <span>&copy;waltersantos08</span>
-    </div>
+  <!-- INTRO -->
+  <div id="intro-screen">
 
-    <input type="text" placeholder="Nome" class="login__input">
-    <button type="submit" class="login__button">começar</button>
+    <h1 id="intro-title">
+      - Walter Santos -
+    </h1>
 
-  </form>
+    <p id="intro-subtitle">
+      Presents
+    </p>
+
+  </div>
+
+  <main class="login-page">
+
+    <section class="login-card">
+
+      <div class="left-side">
+
+        <img
+          class="logo"
+          src="./images/logo.png"
+          alt="Yu-Gi-Oh Logo"
+        >
+
+        <img
+          class="character"
+          src="./images/yami yugi.png"
+          alt="Yami Yugi"
+        >
+
+      </div>
+
+      <div class="right-side">
+
+        <div class="panel">
+
+          <p class="eyebrow">
+            Walter Santos Presents
+          </p>
+
+          <h1>
+            Memory<br>Duel
+          </h1>
+
+          <p class="description">
+            Encontre os pares, vença o relógio<br>
+            e prove que você tem memória de duelista.
+          </p>
+
+          <form class="login-form">
+
+            <label for="playerName">
+              Nome do jogador
+            </label>
+
+            <input
+              id="playerName"
+              class="login__input"
+              type="text"
+              placeholder="Digite seu nome..."
+              maxlength="18"
+              autocomplete="off"
+            >
+
+            <button
+              class="login__button"
+              type="submit"
+              disabled
+            >
+              Começar duelo
+            </button>
+
+          </form>
+
+          <footer>
+            <span>@waltersantos08</span>
+
+            <span>
+              © Todos os direitos reservados
+            </span>
+          </footer>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
 
 </body>
-
 </html>

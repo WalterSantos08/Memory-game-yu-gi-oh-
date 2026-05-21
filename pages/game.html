@@ -1,28 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/game.css">
+  <meta charset="UTF-8" />
 
-  <script defer src="../js/game.js"></script>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-  <title>Memory Game</title>
+  <title>Memory Duel</title>
+
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/game.css" />
 </head>
 
 <body>
 
-  <main>
-    <header>
-      <span class="player"></span>
-      <span>Tempo: <span class="timer">00</span></span>
+  <main class="game-page">
+
+    <header class="game-header">
+
+      <div class="player-box">
+        <span class="label">Duelista</span>
+
+        <span class="player"></span>
+      </div>
+
+      <img
+        src="../images/logo.png"
+        alt="Yu-Gi-Oh"
+        class="header-logo"
+      />
+
+      <div class="stats">
+
+        <div>
+          <span class="label">Tempo</span>
+
+          <strong class="timer">0</strong>
+        </div>
+
+        <div>
+          <span class="label">Jogadas</span>
+
+          <strong class="moves">0</strong>
+        </div>
+
+      </div>
+
     </header>
 
-    <div class="grid"></div>
+    <div class="game-actions">
+
+      <button
+        class="action-button restart-button"
+        type="button"
+      >
+        Reiniciar
+      </button>
+
+      <a
+        href="../index.html"
+        class="action-button home-button"
+      >
+        Trocar jogador
+      </a>
+
+    </div>
+
+    <section class="grid"></section>
+
   </main>
 
-</body>
+  <div class="modal hidden">
 
+    <div class="modal-content">
+
+      <img
+        src="../images/logo.png"
+        alt="Yu-Gi-Oh"
+      />
+
+      <h2>Duelo Finalizado!</h2>
+
+      <p class="result-message"></p>
+
+      <div class="modal-actions">
+
+        <button
+          class="action-button play-again-button"
+          type="button"
+        >
+          Jogar novamente
+        </button>
+
+        <a
+          href="../index.html"
+          class="action-button exit-button"
+        >
+          Sair
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="../js/game.js"></script>
+
+</body>
 </html>
