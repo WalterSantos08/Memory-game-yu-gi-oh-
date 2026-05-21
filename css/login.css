@@ -163,7 +163,7 @@ body {
 
 .character {
   width: 100%;
-  max-width: 620px;
+  max-width: 500px;
 
   position: relative;
   z-index: 2;
@@ -173,9 +173,8 @@ body {
   filter:
     drop-shadow(0 0 30px rgba(180, 0, 255, 0.25));
 
-  margin-top: -40px;
+  margin-top: 10px;
 }
-
 .right-side {
   width: 480px;
 
@@ -450,11 +449,11 @@ footer {
     left: 24px;
   }
 
-  .character {
-    max-width: 340px;
+.character {
+  max-width: 280px;
 
-    margin-top: -20px;
-  }
+  margin-top: 10px;
+}
 
   .right-side {
     padding: 20px;
